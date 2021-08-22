@@ -3,7 +3,6 @@ package com.continental.assignment.vehicle.domain;
 import javax.persistence.Entity;
 import java.util.Date;
 
-@Entity
 public class VehicleViolation {
 
     private String violationId;

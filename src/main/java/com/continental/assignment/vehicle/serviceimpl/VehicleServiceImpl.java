@@ -49,8 +49,8 @@ public class VehicleServiceImpl implements VehicleService {
            return penalty;
 
        }).collect(Collectors.toList());
-//       List<VehiclePenalty> penalties = new ArrayList<>();
-//      violations.stream().
+        System.out.println("Penalty Vehicles" +penaltyVehicles);
+        penaltyVehicles.forEach(penalty -> System.out.println(penalty.getVehicleNumber()));
          notificationProxy.sendEmail(penaltyVehicles);
     }
 }
